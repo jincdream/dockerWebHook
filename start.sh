@@ -1,18 +1,22 @@
-#!/bin/bash
+#!/bin/bash;
 
-stopn (){
+stopn()
+{
   docker stop nodep
 }
 
-remove (){
+remove()
+{
   docker rm nodep
 }
 
-pull (){
+pull()
+{
   docker pull looj/dockertest
 }
 
-runn (){
+runn()
+{
   docker run --name=nodep -d --publish 10086:8099 looj/dockertest
 }
 
