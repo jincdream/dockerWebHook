@@ -7,7 +7,7 @@ stopn()
 
 remove()
 {
-  docker rm nodep
+  docker rm -f nodep
 }
 
 pull()
@@ -20,4 +20,4 @@ runn()
   docker run --name=nodep -d --publish 10086:8099 looj/dockertest
 }
 
-docker stop nodep & remove & pull & runn
+stopn & remove & pull & runn
