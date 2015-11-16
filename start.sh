@@ -1,3 +1,4 @@
+#!/bin/bash
 stop(){
   docker stop nodde
 }
