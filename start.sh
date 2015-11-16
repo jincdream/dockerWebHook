@@ -1,14 +1,14 @@
 #!/bin/bash
-stop(){
+stop (){
   docker stop nodde
 }
-remove(){
+remove (){
   docker remove node
 {
-pull(){
+pull (){
   docker pull loop/dockertest
 }
-run(){
+run (){
   docker run --name=node -d -p 10086:8099 loop/dockertest
 }
-stop && remove && pull && run;
+stop && remove && pull && run
