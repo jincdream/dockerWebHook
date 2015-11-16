@@ -1,5 +1,6 @@
 #!/bin/bash
-stop (){
+
+stopn (){
   docker stop nodep
 }
 
@@ -15,4 +16,4 @@ runn (){
   docker run --name=nodep -d --publish 10086:8099 looj/dockertest
 }
 
-stop & remove & pull & runn
+stopn & remove & pull & runn
