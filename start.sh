@@ -20,4 +20,4 @@ runn()
   docker run --name=nodep -d --publish 10086:8099 looj/dockertest
 }
 
-stopn & remove & pull & runn
+stopn && remove && pull && runn
