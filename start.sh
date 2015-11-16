@@ -10,5 +10,4 @@ pull(){
 run(){
   docker run --name=node -d -p 10086:8099 loop/dockertest
 }
-
 stop && remove && pull && run;
