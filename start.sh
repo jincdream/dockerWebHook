@@ -1,10 +1,10 @@
 #!/bin/bash
 stop (){
-  docker stop node
+  docker stop nodep
 }
 
 remove (){
-  docker rm node
+  docker rm nodep
 }
 
 pull (){
@@ -12,7 +12,7 @@ pull (){
 }
 
 run (){
-  docker run --name=node -d -p 10086:8099 looj/dockertest
+  docker run -n nodep -d -p 10086:8099 looj/dockertest
 }
 
 stop & remove & pull & run
