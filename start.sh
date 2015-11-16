@@ -4,11 +4,11 @@ stop (){
 }
 
 remove (){
-  docker remove node
+  docker rm node
 }
 
 pull (){
-  docker pull loop/dockertest
+  docker pull looj/dockertest
 }
 
 run (){
