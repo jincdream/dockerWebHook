@@ -2,7 +2,7 @@
 const http = require('http')
 const child = require('child_process')
 const path = require('path')
-
+const fs = require('fs')
 
 var shFile = path.resolve('./start.sh')
 var time   = +new Date
