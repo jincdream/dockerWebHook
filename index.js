@@ -59,6 +59,7 @@ var server = http.createServer((req,res) => {
     data += postBuffer
   })
   req.on('end',(err) => {
+    fs.writeFileSync('a', data)
     checkDockPost(data)
       .then((json) => {
         let run = child.spawn('sh',[shFile])
